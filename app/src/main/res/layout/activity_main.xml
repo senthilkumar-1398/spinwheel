@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <!-- Spin Wheel ImageView -->
+    <ImageView
+        android:id="@+id/spin_wheel"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/spin_wheel_image"
+        android:layout_gravity="center" />
+
+    <!-- Static Arrow ImageView, positioned above the spin wheel -->
+    <ImageView
+        android:id="@+id/arrow_image_view"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_arrow_down"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="30dp" />
+
+    <!-- Spin Button, below the wheel -->
+    <Button
+        android:id="@+id/spin_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spin"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="20dp" />
+
+</FrameLayout>
+
+
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:id="@+id/main"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--&lt;!&ndash;    <FrameLayout&ndash;&gt;-->
+<!--&lt;!&ndash;        xmlns:android="http://schemas.android.com/apk/res/android"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:gravity="center">&ndash;&gt;-->
+
+<!--&lt;!&ndash;        &lt;!&ndash; Custom Spinner View for the spinning wheel &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        <com.example.spin_wheel.CustomSpinnerView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/customSpinner"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="300dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="300dp"/>&ndash;&gt;-->
+
+<!--&lt;!&ndash;        &lt;!&ndash; Button to trigger spin, placed in the center &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        <Button&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/spinButton"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:text="Spin"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_gravity="center"/>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    </FrameLayout>&ndash;&gt;-->
+
+<!--    <com.adefruandta.spinningwheel.SpinningWheelView-->
+<!--        android:id="@+id/wheel"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_weight="1"-->
+<!--        app:wheel_arrow_color="@android:color/black"-->
+<!--        app:wheel_colors="@array/rainbow_dash"-->
+<!--        app:wheel_items="@array/dummy"-->
+<!--        app:wheel_stroke_color="@android:color/black"-->
+<!--        app:wheel_stroke_width="5dp"/>-->
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
